@@ -21,13 +21,8 @@ import UserHome from "../Dashboard/User/UserHome";
 import UserRatings from "../Dashboard/User/UserRatings";
 import DriverProfile from "../Dashboard/Driver/DriverProfile";
 import DriverBooking from "../Dashboard/Driver/DriverBooking";
-import Notifications from "../Dashboard/User/Notifications";
 import OwnerInfo from "../Dashboard/Agency/OwnerInfo";
 import AgencyVehicleDetails from "../components/AgencyVehicleDetails/AgencyVehicleDetails";
-import Ag from "../Dashboard/Agency/Ag";
-
-
-
 
 export const DashboardRoutes = [
     {
@@ -58,10 +53,6 @@ export const DashboardRoutes = [
             {
                 path: "user-favourite",
                 element: <FavouriteCars></FavouriteCars>
-            },
-            { 
-                path: "notifications",
-                element:<Notifications></Notifications>
             },
             // AGENCY ---------------
             {
@@ -103,10 +94,6 @@ export const DashboardRoutes = [
             {
                 path: "/dashboard/agency/customer-management",
                 element: <CustomerManagement></CustomerManagement>
-            },
-            {
-                path: "/dashboard/ag",
-                element: <Ag></Ag>,
             },
            
             // admin routes

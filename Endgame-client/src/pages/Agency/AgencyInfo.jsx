@@ -3,13 +3,11 @@ import { locationData } from "../../../public/locationData";
 import { useState } from "react";
 import image from '../../../public/asset/agency-image2.jpg'
 import { useMutation } from "@tanstack/react-query";
-import { generateAgencyId } from "../../components/agencyIdGenerator";
 import { Helmet } from "react-helmet-async";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import loaderEliment from '../../../public/logo.gif';
 
 const AgencyInfo = () => {
-    const [agencyId, setAgencyId] = useState(1);
     const [loading, setLoading] = useState(false)
 
     const [selectedDivision, setSelectedDivision] = useState('');
@@ -51,7 +49,6 @@ const AgencyInfo = () => {
         const area = form.localAddress.value;
         const businessRegNumber = form.regNumber.value;
         const taxIdentificationNumber = form.identificationNumber.value;
-        const agency_id = generateAgencyId();
         // setAgencyId(agencyId + 1);
 
         const agencyAddress = {
@@ -65,7 +62,7 @@ const AgencyInfo = () => {
             taxIdentificationNumber,
             transportLicenseNumber,
             insuranceLicenseNumber,
-            numberOfVehicles, agency_id
+            numberOfVehicles,
         };
 
         // console.log(info)

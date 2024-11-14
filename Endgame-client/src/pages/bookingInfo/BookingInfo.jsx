@@ -12,7 +12,7 @@ import CarData from "../../components/bookingComponent/CarData";
 import AgencyData from "../../components/bookingComponent/AgencyData";
 import BookingData from "../../components/bookingComponent/BookingData";
 import UserData from "../../components/bookingComponent/UserData";
-import { calculateHoursDifference } from "../../api/dateTime/dateTimeUtilities";
+import { calculateHoursDifference } from "../../api/utilities/dateTimeUtilities";
 import loader from '../../../public/logo.gif'
 import DriverList from "../../components/driverList/DriverList";
 import PaymentData from "../../components/paymentData/PaymentData";
